@@ -1,0 +1,66 @@
+*{
+  box-sizing: border-box;
+}
+html{
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif;
+}
+body{
+  background-image: url("homepagebg6.jpg");
+  /*background-color: #0000CD;*/
+  background-position: center;
+  background-repeat: no-repeat;
+  /*filter: blur(1px);*/
+  background-blend-mode: saturation;
+  background-size: 100% 100%;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+ul li {
+  display: inline;
+  text-align: center;
+}
+
+a {
+  display: inline-block;
+  width: 20%;
+  padding: .5rem 0;
+  margin: 0;
+  text-decoration: none;
+  color: #333;
+  font-size: 110%;
+}
+
+.home:hover ~ hr {
+  margin-left: 0;
+}
+
+.group:hover ~ hr{
+  margin-left: 20%;
+}
+
+.message:hover ~ hr {
+  margin-left: 40%;
+}
+
+.create:hover ~ hr {
+  margin-left: 60%;
+}
+
+.profile:hover ~ hr{
+	margin-left: 80%
+}
+
+hr {
+  height: .25rem;
+  width: 20%;
+  margin-left: 60%;
+  background: tomato;
+  border: none;
+  transition: .3s ease-in-out;
+}

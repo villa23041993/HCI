@@ -1,0 +1,121 @@
+body{
+  margin: 0;
+  background: url("loginbg3.jpg") no-repeat fixed;
+  background-position: center;
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+.loginbox{
+	width: 35%;
+	height: 95%;
+	background-color: rgb(0,0,0); 
+  	background-color: rgba(0,0,0, 0.6);
+	color: #fff;
+	top: calc(50%);
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	border-radius: 10px;
+	padding: 0 30px; 
+}
+
+.avatar{
+	widows: 60px;
+	height: 60px;
+	left: -18px;
+	position: absolute;
+	top: -18px;
+}
+
+h1{
+	margin: 0;
+	padding: 25px 0 5px;
+	text-align: center;
+	font-size: 27px;
+}
+
+.loginbox p{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+
+.loginbox input{
+	width: 100%;
+	margin-bottom: 25px;
+}
+
+.loginbox input[type="text"], input[type="password"], input[type="date"], input[type="number"]{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 20px;
+	color: #fff;
+	font-size: 16px: 
+}
+
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        /*background: url(https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/calendar-16.png) center/80% no-repeat;
+        color: rgba(255, 255, 255, 0);
+        opacity: 1*/
+        filter: invert(1);
+    }
+
+    input[type="date"]::-webkit-calendar-picker-indicator:hover {
+        opacity: 0.8
+    }
+
+::-webkit-input-placeholder { /* Edge */
+  color: #edf5ff;
+}
+
+.loginbox input[type="submit"]{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #fb2525;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+}
+
+.loginbox input[type="submit"]:hover{
+	cursor: pointer;
+	background: #edf5ff;
+	color: #000;
+}
+
+#link-container {
+    text-align: center;
+}
+#link {
+	text-decoration: none;
+	font-size: 15px;
+	line-height: 0;
+	color: darkgrey;
+    display: inline-block;
+    padding: 5px;
+}
+
+#link a{
+	color: #42be65;
+}
+
+#link a:hover{
+	color: #ffc107;
+}
+
+/*.loginbox a{
+	text-decoration: none;
+	font-size: 15px;
+	line-height: 0;
+	color: darkgrey;
+
+}
+
+.loginbox a:hover{
+	color: #ffc107;
+}*/

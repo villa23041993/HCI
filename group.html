@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>G R O U P</title>
+	<link rel="stylesheet" type="text/css" href="page-design.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <style>
+h1{
+   font-size: 25px;
+   color: black;
+   
+ }
+p1{
+   font-size:20px;
+   color: black;
+    text-transform: capitalize;
+    margin-bottom:50px;
+   padding-bottom:20px;
+}
+    @media only screen and (min-width: 750px) {
+    .desktop-1-cols {width: 8.33%;}
+    .desktop-2-cols {width: 16.66%;}
+    .desktop-3-cols {width: 25%;}
+    .desktop-4-cols {width: 33.33%;}
+    .desktop-5-cols {width: 41.66%;}
+    .desktop-6-cols {width: 50%;}
+    .desktop-7-cols {width: 58.33%;}
+    .desktop-8-cols {width: 66.66%;}
+    .desktop-9-cols {width: 75%;}
+    .desktop-10-cols {width: 83.33%;}
+    .desktop-11-cols {width: 91.66%;}
+    .desktop-12-cols {width: 100%;}
+}
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    flex-wrap: wrap;
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>		
+	<div class="header"></div>
+	<div class="menubar">
+		<ul>
+	 	 	<li class=""><div class="deco"></div></li><!--
+	     --><li class="home"><a href="homepage.html">h o m e</a></li><!--
+	     --><div class="b1"></div><!--
+	 	 --><li class="group"><a href="group.html" onclick="click()">g r o u p</button></li><!--
+	     --><div class="b2"></div><!--
+	 	 --><li class="message"><a href="javascript:click()">m e s s a g e</a></li><!--
+	     --><div class="b3"></div><!--
+	 	 --><li class="create"><a href="#">c r e a t e</a></li><!--
+	     --><div class="b4"></div><!--
+	 	 --><li class="profile"><a href="profile.html" onclick="click()">p r o f i l e</a></li><!--
+	 	 --><li class=""></li><!--
+	 	 --><li class=""></li><!--
+	 	 --><li class=""></li><!--
+	 	--><li class=""></li>
+	 	<hr id="line" />
+	 </ul>  
+	</div>	
+	<div class="body-layout"></div>
+ <h1>Joined group</h1>
+ <div class="flex-container" style="background-color:#33EEFA;">
+       <div class="content desktop-4-cols phone-12-cols" style= "position:relative; right:5px; top: 10px;">
+            <p1 style= "position:relative; left:15px;bottom: 10px; color:blue">Group name</p1>
+       </div>
+       <div class="content desktop-3-cols phone-12-cols">
+           <p1 style= "position:relative; color:Blue">Activities</p1>
+       </div>
+       <div class="content desktop-4-cols phone-12-cols">
+           <p1 style= "position:relative; color:blue">Progress</p1>
+       </div>
+       <div class="content desktop-1-cols phone-12-cols">
+           <p1 style= "position:relative; color:blue"></p1>
+       </div>
+       
+</div>
+<div class="flex-container" >
+       <div class="content desktop-4-cols phone-12-cols" style= "position:relative; right:5px; top: 10px;">
+            <p1 style= "position:relative; left:15px;bottom: 10px">Swt Group</p1>
+       </div>
+       <div class="content desktop-3-cols phone-12-cols" >
+          <i class="far fa-comment-alt"></i>
+          <i class="fa fa-group"></i>
+          <i class="fa fa-server"></i>
+          
+       </div>
+       <div class="content desktop-4-cols phone-12-cols">
+           <img src="https://static.thenounproject.com/png/227211-200.png" alt="Girl in a jacket" style="position:relative;width:70px;height:50px;bottom:15px;">
+       </div>
+       <div class="content desktop-1-cols phone-12-cols" >
+          <i class="fa fa-sign-out" style="font-size:25px"></i>
+       </div>
+       
+</div> 
+</body>
+<style type="text/css">	
+	hr {
+	  height: .25rem;
+	  width: 10%;
+	  margin-left: calc(10% + 27px);
+	  background: tomato;
+	  border: none;
+	  transition: .3s ease-in-out;
+	  border-radius: 10px 10px 10px 10px;
+	}
+</style>
+<script type="text/javascript">
+	//document.getElementByClassName("home").addEventListener("mouseover", mouseOver);
+	//document.getElementByClassName("home").addEventListener("mouseout", mouseOut);
+
+	function click(){
+		//document.getElementById("line").style.marginLeft = "40%";
+		//document.getElementByClassName("home")
+
+		console.log("clicked");		
+	}
+
+	function mouseOver(){
+
+	}
+</script>
+</html>

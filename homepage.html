@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>H O M E P A G E</title>
+	<link rel="stylesheet" type="text/css" href="page-design.css">
+	<link rel="stylesheet" type="text/css" href="homepage.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>		
+	<div class="header"></div>
+	<div class="menubar">
+		<ul>
+	 	 	<li class=""><div class="deco"></div></li><!--
+	     --><li class="home"><a href="homepage.html">h o m e</a></li><!--
+	     --><div class="b1"></div><!--
+	 	 --><li class="group"><a href="group.html" onclick="click()">g r o u p</button></li><!--
+	     --><div class="b2"></div><!--
+	 	 --><li class="message"><a href="javascript:click()">m e s s a g e</a></li><!--
+	     --><div class="b3"></div><!--
+	 	 --><li class="create"><a href="#">c r e a t e</a></li><!--
+	     --><div class="b4"></div><!--
+	 	 --><li class="profile"><a href="profile.html" onclick="click()">p r o f i l e</a></li><!--
+	 	 --><li class=""></li><!--
+	 	 --><li class=""></li><!--
+	 	 --><li class=""></li><!--
+	 	--><li class=""></li>
+	 	<hr id="line" />
+	 </ul>  
+	</div>	
+	<div class="body-layout">
+		<div class="search-container">
+			<button type="submit"><i class="fa fa-search"></i></button>
+			<input type="text" name="" placeholder="Search...">
+		</div>	
+		<div class="divisor"/></div>		
+		<div class="group-holder">
+			<div class="slider">
+				
+				<a href="#slide-1">1</a>
+				<a href="#slide-2">2</a>
+				<a href="#slide-3">3</a>
+				<a href="#slide-4">4</a>
+				<a href="#slide-5">5</a>
+
+				<div class="slides">
+					<div id="slide-1">
+						1
+					</div>
+					<div id="slide-2">
+						2
+					</div>
+					<div id="slide-3">
+						3
+					</div>
+					<div id="slide-4">
+						4
+					</div>
+					<div id="slide-5">
+						5
+					</div>
+				</div>
+			</div>		
+	</div>
+</body>
+<style type="text/css">	
+	hr {
+	  height: .25rem;
+	  width: 10%;
+	  margin-left: 27px;
+	  background: tomato;
+	  border: none;
+	  transition: .3s ease-in-out;
+	  border-radius: 10px 10px 10px 10px;
+	}
+</style>
+<script type="text/javascript">
+	//document.getElementByClassName("home").addEventListener("mouseover", mouseOver);
+	//document.getElementByClassName("home").addEventListener("mouseout", mouseOut);
+
+	function click(){
+		//document.getElementById("line").style.marginLeft = "40%";
+		//document.getElementByClassName("home")
+
+		console.log("clicked");		
+	}
+
+	function mouseOver(){
+
+	}
+</script>
+</html>

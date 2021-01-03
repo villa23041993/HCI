@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>L O G I N</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>			
+	<div class="bg"></div>
+		<div class="loginbox">
+			<img src="avatar.png" class="avatar">
+			<h1>L O G I N</h1>
+			<!--<form>-->
+				<p>Username<p id="hiddentext1" style="font-size: 12px"></p></p>
+				<input type="text" id="user" name="" placeholder="Enter Username">
+				<p>Password<p id="hiddentext2" style="font-size: 12px"></p></p>
+				<input type="password" id="pass" name="" placeholder="Enter Password">
+				<button onclick="toHomePage()">LOGIN</button>
+				<a href="#">Forgot Password ?</a><br>
+				<a href="register.html">Create account</a>
+			<!--</form>-->
+		</div>
+	</body>
+	<script type="text/javascript">
+		function toHomePage(){
+			var userInputValue = document.getElementById("user").value;
+			var passwordInputValue = document.getElementById("pass").value;
+			document.getElementById("hiddentext2").innerHTML = "";	
+			document.getElementById("hiddentext1").innerHTML = "";
+			if(userInputValue != "" && passwordInputValue != ""){
+				//window.location.href = "C:/Users/kyanh/Desktop/LUH Materials/Sem 5/MCI/übungen/group/homepage.html";
+				location.href = "homepage.html";
+			}else{
+				var txt2 = "*Password required";
+				txt2 = txt2.fontcolor("#f90606"); 
+				var txt1 = "*Username required";
+				txt1 = txt1.fontcolor("#f90606"); 				
+				if(userInputValue == "" && passwordInputValue == ""){
+					document.getElementById("hiddentext2").innerHTML = txt2;	
+					document.getElementById("hiddentext1").innerHTML = txt1;
+				}else if(passwordInputValue == ""){
+					document.getElementById("hiddentext2").innerHTML = txt2;					
+				}else{
+					document.getElementById("hiddentext1").innerHTML = txt1;
+				}
+			}
+		}
+	</script>
+</html>
